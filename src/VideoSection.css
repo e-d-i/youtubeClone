@@ -1,0 +1,89 @@
+.videoSection {
+  flex: 0.84;
+  border-top: 1px solid #e5e5e5;
+  height: 100%;
+  background-color: #f9f9f9;
+  padding: 25px 50px 25px 50px;
+  position: relative;
+  margin-left: auto;
+}
+
+.videoSection > h2 {
+  margin: 0 0 20px 5px;
+}
+
+.videoSectionContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 2560px) {
+  .videoSection {
+    flex: 0.91;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .videoSection {
+    flex: 0.84;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .videoSection {
+    flex: 0.77;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .videoSection {
+    flex: 0.87;
+  }
+  .videoSectionContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .videoSection {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .videoSection > h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 598px) {
+  .videoSection {
+    min-width: 138%;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 425px) {
+  .videoSection {
+    min-width: 141%;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 419px) {
+  .videoSection {
+    min-width: 143%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .videoSection {
+    min-width: 153%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .videoSection {
+    min-width: 179%;
+  }
+}

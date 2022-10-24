@@ -1,0 +1,102 @@
+.searchPageVideoSectionCoverVideo {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.searchPageVideoSectionCoverVideo > img {
+  height: 280px;
+  width: 420px;
+  object-fit: contain;
+}
+
+.searchPageVideoSectionCoverVideoInfo {
+  margin: 0 20px;
+  text-align: justify;
+}
+
+.searchPageVideoSectionCoverVideoInfo > h3 {
+  color: #000;
+  font-weight: 500;
+}
+
+.searchPageVideoSectionCoverVideoInfo > p {
+  font-size: small;
+  margin-top: 2px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* define how many lines to show up */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.searchPageVideoSectionCoverVideoInfo > .description {
+  font-size: medium;
+  margin-bottom: 10px;
+}
+
+.searchPageVideoSectionCoverVideoInfo > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 125px;
+  margin: 10px 0;
+}
+
+.searchPageVideoSectionCoverVideoInfo > div > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.searchPageVideoSectionCoverVideoInfo > .specialInfo {
+  background-color: #ececec;
+  padding: 3px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.specialInfo1 {
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 2560px) {
+  .searchPageVideoSectionCoverVideo {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 821px) and (max-width: 860px) {
+  .searchPageVideoSectionCoverVideo {
+    max-width: 622px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .searchPageVideoSectionCoverVideo {
+    width: 668px;
+  }
+  .searchPageVideoSectionCoverVideoInfo > p {
+    -webkit-line-clamp: 6;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .searchPageVideoSectionCoverVideo {
+    max-width: 580px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .searchPageVideoSectionCoverVideo {
+    max-width: 573.75px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .searchPageVideoSectionCoverVideo {
+    max-width: 572.8px;
+  }
+}

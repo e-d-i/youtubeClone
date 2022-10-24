@@ -1,0 +1,169 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.menuSharpIcon {
+  cursor: pointer;
+}
+
+.headerLogo {
+  height: 20px;
+  width: 90px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.headerInput {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c6c6c6;
+  border-radius: 1.5px;
+  width: 40%;
+  box-shadow: 0 -5px 5px -5px #333, 0 5px 5px -5px #333;
+}
+
+.headerInput:focus-within {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.headerInput > input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+.headerInput > a {
+  height: 23.5px;
+}
+
+.headerInputMicIcon {
+  border-left: 1px solid #c6c6c6;
+}
+
+.headerInputSearchIcon,
+.headerInputMicIcon {
+  width: 35px !important;
+  color: #4285f4 !important;
+  font-size: x-large !important;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.headerInputSearchIcon:hover,
+.headerInputMicIcon:hover {
+  opacity: 1;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.headerRightIcon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.headerRightIcon:hover {
+  scale: 105%;
+}
+
+.headerRight {
+  position: relative;
+}
+
+.headerRight1::after {
+  --scale: 0;
+  --tooltip-color: #818589;
+  font-size: 14px;
+
+  position: absolute;
+  top: 45px;
+  left: 10px;
+  transform: translateX(-50%) translateY(var(--translate-y, 0))
+    scale(var(--scale));
+  transition: 200ms transform;
+  transform-origin: bottom center;
+}
+
+.headerRight2::after {
+  --scale: 0;
+  --tooltip-color: #818589;
+  font-size: 14px;
+
+  position: absolute;
+  top: 45px;
+  left: 50px;
+  transform: translateX(-50%) translateY(var(--translate-y, 0))
+    scale(var(--scale));
+  transition: 200ms transform;
+  transform-origin: bottom center;
+}
+
+.headerRight1::after,
+.headerRight2::after {
+  content: attr(data-tooltip);
+  color: #fff;
+  padding: 6px;
+  border-radius: 1.5px;
+  text-align: center;
+  width: max-content;
+  max-width: 100%;
+  background: var(--tooltip-color);
+}
+
+.headerRight1:hover::after,
+.headerRight2:hover::after {
+  --scale: 1;
+}
+
+@media only screen and (min-width: 821px) {
+  .menuSharpIcon {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .headerInput > .headerInputMicIcon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 598px) {
+  .header {
+    min-width: 138%;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 425px) {
+  .header {
+    min-width: 141%;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 419px) {
+  .header {
+    min-width: 143%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header {
+    min-width: 153%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header {
+    min-width: 179%;
+  }
+}
